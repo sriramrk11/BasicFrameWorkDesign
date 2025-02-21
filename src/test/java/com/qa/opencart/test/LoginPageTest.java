@@ -24,7 +24,7 @@ public class LoginPageTest extends BaseTest {
 		Assert.assertEquals(AppConstants.LOGIN_PAGE_TITLE, "Account Login", AppError.TITLE_NOT_FOUND);
 	}
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void loginURLTest() {
 		String url = loginPage.getLoginURL();
 		Assert.assertTrue(url.contains(AppConstants.LOGIN_PAGE_URL_FRACTION),AppError.URL_NOT_FOUND);
